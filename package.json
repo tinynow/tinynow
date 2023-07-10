@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "lightningcss": "^1.21.5",
+    "lightningcss-cli": "^1.21.5"
+  }
+}
