@@ -1,0 +1,17 @@
+/* TODO: create shades */
+:root {
+  /* Palette colors are "private" and should not be used directly.
+     "--_" denotes a private variable.
+    */
+  --_color-light-blue: oklch(70% 0.138 244.06);
+  --_color-dark-blue: oklch(38.5% 0.111 266.29);
+  --_color-orange: oklch(71.6% 0.22 46.2);
+  --_color-neutral-light: oklch(98% 0.02 46.2);
+  --_color-neutral-dark: oklch(10% 0.01 46.2);
+
+  --color-brand: var(--_color-light-blue);
+  --color-secondary: var(--_color-dark-blue);
+  --color-accent: var(--_color-orange);
+  --color-neutral-darkest: var(--_color-neutral-dark);
+  --color-neutral-lightest: var(--_color-neutral-light);
+}
