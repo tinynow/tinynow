@@ -7,7 +7,6 @@ const container = $('#color-swatch-container');
 
 const colors = Object.entries(tokens).filter(([key]) => key.indexOf('--color') === 0).map(([key]) => key);
 
-colors.push('transparent');
 const parts = [
     '--background-color',
     '--can-top-fill',
