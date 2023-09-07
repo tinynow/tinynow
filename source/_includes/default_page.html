@@ -1,0 +1,8 @@
+---
+layout: base.html
+---
+{% include 'header.html' %}
+<main>
+    <h1>{% if title %}{{ title }}{% else %}Needs title{% endif %}</h1>
+    {{ content }}
+</main>

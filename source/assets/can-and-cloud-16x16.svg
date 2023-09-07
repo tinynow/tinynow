@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+    <style>
+        :root {
+            --light-blue: oklch(70% 0.138 244.06);
+            --dark-blue: oklch(38.5% 0.111 266.29);
+            --orange: oklch(71.6% 0.22 46.2);
+            --color__brand: var(--light-blue);
+            --color__secondary: var(--dark-blue);
+            --color__secondary--light: oklch(42% 0.111 266.29);
+            --color__accent: var(--orange);
+            --color__neutral--900: oklch(10% 0 0);
+            --color__neutral--100: oklch(98% .02 46.2);
+
+
+            --stroke-width: .1;
+
+            stroke-width: var(--stroke-width);
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            background-color: var(--color__neutral--900);
+
+        }
+
+        .can-sides {
+            fill: var(--color__brand);
+            stroke: var(--color__accent);
+        }
+
+        .can-top {
+            fill: var(--color__secondary--light);
+            stroke: var(--color__accent);
+        }
+
+        .cloud {
+            fill: var(--color__neutral--100);
+            stroke: var(--color__accent);
+        }
+
+        .cloud-detail {
+            stroke: var(--color__accent);
+        }
+    </style>
+    <g class="can">
+        <path class="can-sides" d="M3 2h10v11.1c-.14 1.06-2.32 1.9-5 1.9-2.76 0-5-.9-5-2h0V2z" />
+        <ellipse class="can-top" cx="8" cy="2" rx="5" ry="1" />
+    </g>
+    <g class="cloud">
+        <path class="cloud-outline"
+            d="M8.2 5c1.93 0 3.5.9 3.5 2a2 2 0 11-1.55 3.26c-.7.44-1.98.74-3.45.74-2.2 0-4-.67-4-1.5 0-.23.14-.45.4-.65.17-.14.42-.27.7-.39-.88.02-2-.0-2.1-.96C1.75 6.37 3.57 6 5.5 6h-.03c.6-.6 1.73-1 3.03-1z" />
+        <path class="cloud-detail" d="M8 7c2.43-.58 2.43 1 2.43 1" />
+    </g>
+</svg>

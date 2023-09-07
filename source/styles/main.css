@@ -1,5 +1,9 @@
 @import url("_tokens.css");
+@import url("_font-face.css");
+@import url("_typography.css");
 @import url("_logo.css");
+@import url("_header.css");
+
 html {
   background-color: var(--color-neutral-lightest);
 }

@@ -1,2 +1,3 @@
-
-# Hello blog world.
+---
+title: Hello blog world
+---

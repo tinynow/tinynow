@@ -30,9 +30,9 @@ function getTokens() {
                 ),
             []
         );
-
+    const tokenEntries = getCSSCustomProps();
     // return an object with the tokens
-    return getCSSCustomProps().reduce((tokens, [propName, propValue]) => {
+    return tokenEntries.reduce((tokens, [propName, propValue]) => {
         return {
             ...tokens,
             [propName]: propValue
@@ -40,4 +40,5 @@ function getTokens() {
     }, {});
 }
 const tokens = getTokens();
+window.tokens = tokens;
 export { tokens };
