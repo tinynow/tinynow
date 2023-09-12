@@ -9,7 +9,7 @@ async function readFile(path) {
     }
 }
 
-module.exports = async function copyTokensToJSON({ dir, runMode, outputMode }) {
+module.exports = async function copyTokensToJSON({ dir }) {
     const tokenFile = await readFile(`${dir.input}/styles/_tokens.css`);
     const tokenAst = css.parse(tokenFile);
     const rootRule = tokenAst.stylesheet.rules.find(rule => rule.selectors && rule.selectors.includes(':root'));
