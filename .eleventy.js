@@ -1,4 +1,5 @@
 const copyTokensToJSON = require('./config/copyTokensToJSON.js');
+const createUtilityClasses = require('./config/createUtilityClasses.js')
 const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
 
 module.exports = function (eleventyConfig) {
@@ -8,13 +9,15 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setLiquidOptions({
         jsTruthy: true
     });
-
     eleventyConfig.addPlugin(lightningCSS);
+
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy({ 'source/assets': '/' });
+    eleventyConfig.ignores.add("source/_data/tokens.json");
 
     eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
         await copyTokensToJSON({ dir, runMode, outputMode });
+        await createUtilityClasses({ dir, runMode, outputMode });
     });
 
     return {

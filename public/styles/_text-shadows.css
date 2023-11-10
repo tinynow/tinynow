@@ -1,0 +1,11 @@
+.text-shadow--two-color {
+  --x-offset: -0.02em;
+  --y-offset: 0.02em;
+  --stroke: 0.025em;
+  --background-color: var(--color-neutral-lightest);
+  --stroke-color: var(--color-accent);
+
+  text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+      0px var(--stroke-color);
+}

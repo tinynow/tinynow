@@ -1,0 +1,31 @@
+.text-size--xxs {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+.text-size--xs {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+.text-size--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.text-size--md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-size--lg {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.text-size--xl {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.align--end {
+  text-align: end;
+}
+.align--center {
+  text-align: center;
+}

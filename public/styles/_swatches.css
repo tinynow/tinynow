@@ -1,0 +1,12 @@
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+  grid-auto-flow: dense;
+  > * {
+    display: block;
+    min-width: 10px;
+    aspect-ratio: 1;
+    font-family: monospace;
+    font-size: 12px;
+  }
+}

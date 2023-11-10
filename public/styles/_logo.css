@@ -1,0 +1,34 @@
+.logo {
+  --stroke-width: 0.1;
+  --background-color: var(--color-neutral-darkest);
+  --can-top-fill: var(--color-brand);
+  --can-sides-fill: var(--color-accent);
+  --can-stroke: var(--color-accent);
+  --cloud-fill: var(--color-neutral-lightest);
+  --cloud-stroke: var(--color-secondary);
+
+  display: block;
+  stroke-width: var(--stroke-width);
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  background-color: var(--background-color);
+
+  .can-sides {
+    fill: var(--can-sides-fill);
+    stroke: var(--can-stroke);
+  }
+
+  .can-top {
+    fill: var(--can-top-fill);
+    stroke: var(--can-stroke);
+  }
+
+  .cloud {
+    fill: var(--cloud-fill);
+    stroke: var(--cloud-stroke);
+  }
+
+  .cloud-detail {
+    stroke: var(--cloud-stroke);
+  }
+}

@@ -1,6 +1,24 @@
 ---
 layout: base.html
-script: tokens.js
 ---
 <h1>Kitchen Sink</h1>
-{{ tokens }}
+<h2>Tokens</h2>
+{%- for group in tokens -%}
+<h3>{{ group[0] }}</h3>
+<dl class="monospace flex flex-wrap text-size--xs max-reading-width pa-y-size-sm">
+    {%- for token in group[1] -%}
+    <dt class="align--end pa-right-size-xs">{{ token[0] }}</dt>
+    <dd>{{ token[1] }}</dt>
+        {%- endfor -%}
+</dl>
+{%- endfor -%}
+<h2>Colors (--color-xxxx)</h2>
+<ul class="swatch-grid">
+    {%- for token in tokens['color'] -%}
+    {%- if token[0] contains '--color' -%}
+    <li style="background-color: {{- token[1] -}}; ">
+        {{token[0] -}}: {{token[1] -}}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
